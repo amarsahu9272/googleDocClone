@@ -1,0 +1,19 @@
+.noMatchRoute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.noMatchRoute>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.noMatchRoute>div>span {
+    font-weight: 800;
+    margin-bottom: 4px;
+}
