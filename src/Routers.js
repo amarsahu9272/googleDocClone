@@ -5,7 +5,7 @@ import Homepage from "./pages/homepage/Homepage";
 import Signin from "./pages/signin/Signin";
 import Signup from "./pages/signup/Signup";
 import Document from "./component/documents/Document";
-import NoMatchRoutes from './NoMatchRoutes';
+import NoMatchRoutes from './pages/NoMatchRoutes';
 
 function routers() {
   return (

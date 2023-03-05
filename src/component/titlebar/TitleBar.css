@@ -1,0 +1,74 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(80, 79, 79);
+    background-color: #fcfcfd;
+    padding: .5rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.topbarLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topbarUntitled {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topbarLeftIcons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.topbarLeftIcons h3 {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.topbarMenu {
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+    font-size: large;
+}
+
+.docImage {
+    width: 5vh;
+    margin-left: 1.5rem;
+}
+
+.topbarRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 3rem;
+
+}
+
+.topbarRightBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1a73e8;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    padding: 9px 16px 10px 12px;
+    gap: .5rem;
+    font-weight: 600;
+}
+
+.lockIcon {
+    font-size: small !important;
+    color: white !important;
+    font-weight: 600 !important;
+    background-color: #1a73e8;
+}

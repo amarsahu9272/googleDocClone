@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    padding: .5rem;
+    color: rgb(80, 79, 79);
+    background-color: #fcfcfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+}
+
+.headerContainer {
+    display: flex;
+    margin-right: 1rem;
+    padding: .1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    border-left: 1px solid gainsboro;
+}
+
+.headerContainer h2 {
+    font-size: 18px;
+}
+
+.fontsizecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.fontlist {
+    background-color: rgb(255, 255, 255);
+    margin-top: 11rem;
+    z-index: 999;
+    list-style: none;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.fontlist li {
+    background-color: rgb(185, 138, 75);
+
+    cursor: pointer;
+
+}
+
+.colorbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox {
+    width: 15px;
+    height: 15px;
+}

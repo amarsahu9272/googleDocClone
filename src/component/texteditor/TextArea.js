@@ -1,12 +1,25 @@
-import React from 'react'
-import './TextArea.css'
+import React, { useState } from "react";
+
+import "./TextArea.css";
 
 function TextArea() {
+  const [selectedWord, setSelectedWord] = useState("");
+  function handleSelection() {
+    const selection = window.getSelection();
+    const selectedWord = selection.toString().trim();
+    setSelectedWord(selectedWord);
+  }
+
   return (
-    <div>
-      TextArea
-    </div>
-  )
+    <p
+      className="inputField"
+      onMouseUp={handleSelection}
+      spellCheck={false}
+      placeholder="@Type here"
+      contentEditable={true}
+    ></p>
+   
+  );
 }
 
-export default TextArea
+export default TextArea;

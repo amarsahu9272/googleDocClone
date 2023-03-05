@@ -1,0 +1,17 @@
+/* .homePage{
+    display: flex;
+    flex-direction: column;
+} */
+.homePageHeader{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
