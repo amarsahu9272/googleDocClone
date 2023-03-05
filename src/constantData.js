@@ -2,6 +2,8 @@ import FormatBoldIcon from "@mui/icons-material/FormatBold";
 import FormatItalicIcon from "@mui/icons-material/FormatItalic";
 import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 import GoogleIcon from "@mui/icons-material/Google";
+import FormatColorTextIcon from "@mui/icons-material/FormatColorText";
+
 import FormatSizeIcon from "@mui/icons-material/FormatSize";
 import FormatAlignCenterIcon from "@mui/icons-material/FormatAlignCenter";
 import FormatAlignLeftIcon from "@mui/icons-material/FormatAlignLeft";
@@ -22,17 +24,66 @@ import Looks4Icon from "@mui/icons-material/Looks4";
 import Looks5Icon from "@mui/icons-material/Looks5";
 import Looks6Icon from "@mui/icons-material/Looks6";
 
+import UndoOutlinedIcon from "@mui/icons-material/UndoOutlined";
+import RedoOutlinedIcon from "@mui/icons-material/RedoOutlined";
+import PrintIcon from "@mui/icons-material/Print";
+import SpellcheckIcon from "@mui/icons-material/Spellcheck";
+import FormatPaintIcon from "@mui/icons-material/FormatPaint";
+import CreateIcon from "@mui/icons-material/Create";
+import InsertLinkIcon from "@mui/icons-material/InsertLink";
+// import AddCommentIcon from "@mui/icons-material/AddComment";
+import AddCommentOutlinedIcon from "@mui/icons-material/AddCommentOutlined";
+// import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
+import InsertPhotoOutlinedIcon from "@mui/icons-material/InsertPhotoOutlined";
+import FormatAlignJustifyIcon from "@mui/icons-material/FormatAlignJustify";
+import FormatLineSpacingIcon from "@mui/icons-material/FormatLineSpacing";
+import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheck";
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
+import FormatClearIcon from "@mui/icons-material/FormatClear";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+// import LockIcon from '@mui/icons-material/Lock';
+import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
+
 export const toolkitIcons = {
+  UndoOutlinedIcon: UndoOutlinedIcon,
+  RedoOutlinedIcon: RedoOutlinedIcon,
+  PrintIcon: PrintIcon,
+  SpellcheckIcon: SpellcheckIcon,
+  FormatPaintIcon: FormatPaintIcon,
+
+  ArrowDropDownIcon: ArrowDropDownIcon,
+
   FormatBoldIcon: FormatBoldIcon,
   FormatItalicIcon: FormatItalicIcon,
   FormatUnderlinedIcon: FormatUnderlinedIcon,
+  FormatColorTextIcon: FormatColorTextIcon,
+  CreateIcon: CreateIcon,
+
+  InsertLinkIcon: InsertLinkIcon,
+  AddCommentOutlinedIcon: AddCommentOutlinedIcon,
+  InsertPhotoOutlinedIcon: InsertPhotoOutlinedIcon,
+
   GoogleIcon: GoogleIcon,
-  FormatSizeIcon:FormatSizeIcon,
-  FormatAlignCenterIcon: FormatAlignCenterIcon,
+  FormatSizeIcon: FormatSizeIcon,
+
   FormatAlignLeftIcon: FormatAlignLeftIcon,
+  FormatAlignCenterIcon: FormatAlignCenterIcon,
   FormatAlignRightIcon: FormatAlignRightIcon,
+  FormatAlignJustifyIcon: FormatAlignJustifyIcon,
+
+  FormatLineSpacingIcon: FormatLineSpacingIcon,
+
+  PlaylistAddCheckIcon: PlaylistAddCheckIcon,
+  FormatListBulletedIcon: FormatListBulletedIcon,
+  FormatListNumberedIcon: FormatListNumberedIcon,
   FormatIndentDecreaseIcon: FormatIndentDecreaseIcon,
   FormatIndentIncreaseIcon: FormatIndentIncreaseIcon,
+
+  FormatClearIcon: FormatClearIcon,
+
+  CreateOutlinedIcon: CreateOutlinedIcon,
+
   SubscriptIcon: SubscriptIcon,
   SuperscriptIcon: SuperscriptIcon,
   UnfoldMoreIcon: UnfoldMoreIcon,

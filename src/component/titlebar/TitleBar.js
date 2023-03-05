@@ -36,7 +36,7 @@ function TitleBar() {
       <div className="topbarRight">
         <CommentOutlinedIcon />
         <div className="topbarRightBtn">
-          <LockIcon className="lockIcon"/> Share
+          <LockIcon className="lockIconShare"/> Share
         </div>
         <Avatar src={profilePic} />
       </div>
