@@ -12,13 +12,13 @@ function TextArea() {
 
   return (
     <p
+      id="inputField"
       className="inputField"
       onMouseUp={handleSelection}
       spellCheck={false}
       placeholder="@Type here"
       contentEditable={true}
     ></p>
-   
   );
 }
 

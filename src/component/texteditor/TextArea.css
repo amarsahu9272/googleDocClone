@@ -8,19 +8,10 @@
     padding: 5rem;
     outline: none;
     overflow-y: scroll;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .inputField::-webkit-scrollbar {
     display: none;
 }
-/* 
-.textArea {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 180vh;
-    background-color: #f7fafc;
-    border: none;
-} */
+
 

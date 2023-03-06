@@ -17,9 +17,9 @@ function TitleBar() {
         <div className="topbarUntitled">
           <div className="topbarLeftIcons">
             <h3>Untitled document</h3>
-            <StarBorderOutlinedIcon />
-            <DriveFileMoveOutlinedIcon />
-            <CloudDoneOutlinedIcon />
+            <StarBorderOutlinedIcon style={{fontSize:"18"}}/>
+            <DriveFileMoveOutlinedIcon style={{fontSize:"18"}}/>
+            <CloudDoneOutlinedIcon style={{fontSize:"18"}}/>
           </div>
           <div className="topbarMenu">
             <span>File</span>

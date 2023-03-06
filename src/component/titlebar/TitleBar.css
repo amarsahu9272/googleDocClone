@@ -5,7 +5,7 @@
     width: 100%;
     color: rgb(80, 79, 79);
     background-color: #fcfcfd;
-    padding: .5rem;
+    padding: .2rem;
     border-bottom: 1px solid gainsboro;
 }
 
@@ -19,18 +19,18 @@
 .topbarUntitled {
     display: flex;
     flex-direction: column;
-
 }
 
 .topbarLeftIcons {
     display: flex;
-    gap: 1rem;
+    gap: .7rem;
     align-items: center;
 }
 
 .topbarLeftIcons h3 {
-    font-size: x-large;
+    font-size: large;
     font-weight: lighter;
+    margin-right: .5rem;
 }
 
 .topbarMenu {
@@ -61,7 +61,7 @@
     background-color: #1a73e8;
     border-radius: .3rem;
     text-transform: capitalize;
-    padding: 9px 16px 10px 12px;
+    padding: 6px 16px 6px 10px;
     gap: .5rem;
     font-weight: 600;
 }
