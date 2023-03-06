@@ -1,6 +1,6 @@
 
 .inputField {
-    flex: 5;
+    flex: 6;
     width: 100%;
     background-color: white;
     height: 120vh;
@@ -8,7 +8,8 @@
     padding: 5rem;
     outline: none;
     overflow-y: scroll;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px  4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .inputField::-webkit-scrollbar {
     display: none;

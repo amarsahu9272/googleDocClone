@@ -39,7 +39,9 @@
     font-weight: 500;
     font-size: large;
 }
-
+.topbarMenu>span{
+    font-size: small;
+}
 .docImage {
     width: 5vh;
     margin-left: 1.5rem;

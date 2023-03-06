@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Homepage.css";
 import TitleBar from "../../component/titlebar/TitleBar";
 import Document from "../../component/documents/Document";
@@ -21,6 +21,7 @@ function Homepage() {
           handleUndo={() => document.execCommand("undo", false, null)}
           handleRedo={() => document.execCommand("redo", false, null)}
           handlePrint={handlePrint}
+          handleSpellCheck={document.execCommand("command", null, false)}
           handlebold={() => document.execCommand("bold")}
           handleItalic={() => document.execCommand("italic")}
           handleUnderline={() => document.execCommand("underline")}
@@ -31,6 +32,11 @@ function Homepage() {
           handlejustifyLeft={() => document.execCommand("justifyLeft")}
           handlejustifyCenter={() => document.execCommand("justifyCenter")}
           handlejustifyRight={() => document.execCommand("justifyRight")}
+          handleBulletList={() => document.execCommand("insertUnorderedList")}
+          handleNumberedList={() => document.execCommand("insertOrderedList")}
+          handleDecreaseIndent={() => document.execCommand("outdent")}
+          handleIncreaseIndent={() => document.execCommand("indent")}
+          handleClearFormate={() => document.execCommand("delete", null, false)}
         />
       </div>
       <Document />

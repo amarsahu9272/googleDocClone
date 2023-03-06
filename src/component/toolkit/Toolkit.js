@@ -12,59 +12,72 @@ function Toolkit(props) {
     <div className="toolkit">
       <span className="toolkitContainer">
         <toolkitIcons.UndoOutlinedIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handleUndo}
         />
         <toolkitIcons.RedoOutlinedIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handleRedo}
         />
         <toolkitIcons.PrintIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handlePrint}
         />
-        <toolkitIcons.SpellcheckIcon 
-        style={{ fontSize: "18" }} 
+        <toolkitIcons.SpellcheckIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleSpellCheck}
         />
-        <toolkitIcons.FormatPaintIcon 
-        style={{ fontSize: "18" }} 
-        />
-      </span>
-      <span className="toolkitContainer">
-        <h5>100%</h5>
-        <toolkitIcons.ArrowDropDownIcon 
-        style={{ fontSize: "18" }}
-         />
-      </span>
-      <span className="toolkitContainer">
-        <h5>Normal text</h5>
-        <toolkitIcons.ArrowDropDownIcon 
-        style={{ fontSize: "18" }} 
+        <toolkitIcons.FormatPaintIcon
+          className="icon"
+          style={{ fontSize: "18" }}
         />
       </span>
-      <span className="toolkitContainer">
-        <h5>Arial</h5>
+      <span className="icon toolkitContainer">
+        <h5 className="icon">100%</h5>
         <toolkitIcons.ArrowDropDownIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
+      </span>
+      <span className="icon toolkitContainer">
+        <h5 className="icon">Normal text</h5>
+        <toolkitIcons.ArrowDropDownIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
+      </span>
+      <span className="toolkitContainer">
+        <h5 className="icon">Arial</h5>
+        <toolkitIcons.ArrowDropDownIcon
+          className="icon"
           style={{ fontSize: "18", marginLeft: "2rem" }}
         />
         <span className="fontResizing">
-          <p className="fontMinus">-</p>
-          <p className="fontNumber">0</p>
-          <p className="fontPlus">+</p>
+          <p className="icon fontMinus">-</p>
+          <p className="icon fontNumber">11</p>
+          <p className="icon fontPlus">+</p>
         </span>
         <toolkitIcons.FormatBoldIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handlebold}
         />
         <toolkitIcons.FormatItalicIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handleItalic}
         />
         <toolkitIcons.FormatUnderlinedIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handleUnderline}
         />
         <toolkitIcons.FormatColorTextIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={() => setShow1(!show1)}
         />
@@ -78,82 +91,109 @@ function Toolkit(props) {
             />
           </>
         ) : null}
-        <toolkitIcons.CreateIcon style={{ fontSize: "18" }} />
+        <toolkitIcons.CreateIcon className="icon" style={{ fontSize: "18" }} />
       </span>
       <span className="toolkitContainer">
-        <toolkitIcons.InsertLinkIcon 
-        style={{ fontSize: "18" }} 
+        <toolkitIcons.InsertLinkIcon
+          className="icon"
+          style={{ fontSize: "18" }}
         />
-        <toolkitIcons.AddCommentOutlinedIcon 
-        style={{ fontSize: "18" }}
-         />
-        <toolkitIcons.InsertPhotoOutlinedIcon 
-        style={{ fontSize: "18" }}
-         />
-        <toolkitIcons.ArrowDropDownIcon 
-        style={{ fontSize: "18" }}
-         />
+        <toolkitIcons.AddCommentOutlinedIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
+        <toolkitIcons.InsertPhotoOutlinedIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
+        <toolkitIcons.ArrowDropDownIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
       </span>
       <span className="toolkitContainer">
         <toolkitIcons.FormatAlignLeftIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handlejustifyLeft}
         />
         <toolkitIcons.FormatAlignCenterIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handlejustifyCenter}
         />
         <toolkitIcons.FormatAlignRightIcon
+          className="icon"
           style={{ fontSize: "18" }}
           onClick={props.handlejustifyRight}
         />
-        <toolkitIcons.FormatAlignJustifyIcon 
-        style={{ fontSize: "18" }}
-         />
+        <toolkitIcons.FormatAlignJustifyIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
       </span>
       <span className="toolkitContainer">
-        <toolkitIcons.FormatLineSpacingIcon 
-        style={{ fontSize: "18" }}
-         />
+        <toolkitIcons.FormatLineSpacingIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
       </span>
       <span className="toolkitContainer">
-        <toolkitIcons.PlaylistAddCheckIcon 
-        style={{ fontSize: "18" }}
-         />
-        <toolkitIcons.ArrowDropDownIcon 
-        style={{ fontSize: "18" }}
-         />
-        <toolkitIcons.FormatListBulletedIcon 
-        style={{ fontSize: "18" }}
-         />
+        <toolkitIcons.PlaylistAddCheckIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
         <toolkitIcons.ArrowDropDownIcon
-         style={{ fontSize: "18" }}
-         />
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
+        <toolkitIcons.FormatListBulletedIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleBulletList}
+        />
+        <toolkitIcons.ArrowDropDownIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
         <toolkitIcons.FormatListNumberedIcon
-         style={{ fontSize: "18" }}
-          />
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleNumberedList}
+        />
         <toolkitIcons.ArrowDropDownIcon
-         style={{ fontSize: "18" }}
-          />
+          className="icon"
+          style={{ fontSize: "18" }}
+        />
         <toolkitIcons.FormatIndentDecreaseIcon
-         style={{ fontSize: "18" }}
-          />
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleDecreaseIndent}
+        />
         <toolkitIcons.FormatIndentIncreaseIcon
-         style={{ fontSize: "18" }}
-          />
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleIncreaseIndent}
+        />
       </span>
       <span className="toolkitContainer">
-        <toolkitIcons.FormatClearIcon 
-        style={{ fontSize: "18" }}
-         />
+        <toolkitIcons.FormatClearIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleClearFormate}
+        />
       </span>
-      <span className="toolkitContainer" style={{ marginLeft: "3.5rem" }}>
+      <span
+        className="toolkitContainer"
+        style={{ marginLeft: "3.5rem", border: "none" }}
+      >
         <div className="titlebarEditingBtn">
-          <toolkitIcons.CreateOutlinedIcon className="lockIconEditing" />
+          <toolkitIcons.CreateOutlinedIcon className="icon lockIconEditing" />
           <h5 style={{ fontSize: "18", backgroundColor: "#e8f0fe" }}>
             Editing
           </h5>
           <toolkitIcons.ArrowDropDownIcon
+            className="icon"
             style={{
               fontSize: "18",
               backgroundColor: "#e8f0fe",

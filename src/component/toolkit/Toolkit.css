@@ -3,7 +3,7 @@
     align-items: center;
     /* justify-content: center; */
     width: 100%;
-    /* padding: .3rem; */
+    padding: .2rem;
     color: rgb(80, 79, 79);
     background-color: #fcfcfd;
     border-bottom: 1px solid gainsboro;
@@ -20,24 +20,32 @@
     gap: .5rem;
     border-right: 1px solid gainsboro;
 }
-.fontResizing{
+
+.toolkitContainer h5 {
+    font-size: 10px;
+}
+
+.fontResizing {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid gainsboro;
 }
-.fontMinus{
+
+.fontMinus {
     border-right: 1px solid gainsboro;
     width: 1.5rem;
     font-weight: 800;
-    
+
 }
-.fontNumber{
+
+.fontNumber {
     border-right: 1px solid gainsboro;
     width: 3rem;
     font-weight: 800;
 }
-.fontPlus{
+
+.fontPlus {
     width: 1.5rem;
     font-weight: 800;
 }
@@ -84,6 +92,7 @@
     width: 15px;
     height: 15px;
 }
+
 .titlebarEditingBtn {
     display: flex;
     justify-content: space-between;
@@ -97,9 +106,13 @@
     gap: .5rem;
     font-weight: 600;
 }
+
 .lockIconEditing {
     /* font-size: small !important; */
     color: #1967d2 !important;
     font-weight: 600 !important;
     background-color: #e8f0fe;
+}
+.icon:hover{
+    color: gray ;    
 }
