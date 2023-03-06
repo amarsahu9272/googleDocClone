@@ -1,16 +1,18 @@
 .widgets {
     flex: 3;
     padding: 1rem;
-    background-color: #f7fafc;
+    background-color: #fcfdfe;
+    height: 100vh;
 
 }
 
 
-
-
-
-
-
+@media screen and (max-width:650px) {
+    .widgets {
+        /* width:100%; */
+        display: none;
+    }
+}
 
 
 

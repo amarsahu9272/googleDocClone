@@ -1,13 +1,21 @@
 .homePageHeader {
     
 }
+.homePage{
+    /* max-width: 100rem; */
+}
 
 .homePageHeader {
     position: sticky;
     top: 0;
     z-index: 100;
 }
-
+@media screen and (max-width:650px) {
+    .homePage{
+      /* width:100%; */
+      max-width:500px;
+    }
+  }
 
 
 
