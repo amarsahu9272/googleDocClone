@@ -114,16 +114,29 @@
     background-color: #e8f0fe;
 }
 
+.icon {
+    cursor: pointer;
+}
+
 .icon:hover {
-    color: gray;
+    /* color: gray; */
+    color: rgb(148, 148, 148);
+
+}
+
+.UploadedImageStyling {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
 
 @media screen and (max-width:500px) {
-    .toolkit{
-      width:100%;
+    .toolkit {
+        width: 100%;
     }
-  }
+}
 
 
 

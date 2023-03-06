@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Toolkit.css";
 import { toolkitIcons } from "../../constantData";
 
 function Toolkit(props) {
+  const fileInputRef = useRef(null);
   const [show1, setShow1] = useState(false);
   const [color, setColor] = useState("");
   props.handleColor(color);
 
+  const handleImageClick = () => {
+    fileInputRef.current.click();
+    // console.log(fileInputRef)
+  };
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = () => {
+      const img = document.createElement("img");
+      img.src = reader.result;
+      img.className = "UploadedImageStyling";
+      img.contentEditable = false;
+      const range = window.getSelection().getRangeAt(0);
+      range.insertNode(img);
+      range.collapse(false);
+    };
+  };
 
   return (
     <div className="toolkit">
@@ -105,7 +124,17 @@ function Toolkit(props) {
         <toolkitIcons.InsertPhotoOutlinedIcon
           className="icon"
           style={{ fontSize: "18" }}
+          onClick={handleImageClick}
         />
+
+        <input
+          type="file"
+          ref={fileInputRef}
+          onChange={handleImageUpload}
+          style={{ display: "none" }}
+          value=""
+        />
+
         <toolkitIcons.ArrowDropDownIcon
           className="icon"
           style={{ fontSize: "18" }}
