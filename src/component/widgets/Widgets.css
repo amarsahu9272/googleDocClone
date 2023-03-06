@@ -1,7 +1,23 @@
-
-.widgets{
+.widgets {
     flex: 3;
     padding: 1rem;
-    background-color:#f7fafc ;
+    background-color: #f7fafc;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+
+    .widgets {
+        display: none;
+    }
 }

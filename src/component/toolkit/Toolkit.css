@@ -113,6 +113,23 @@
     font-weight: 600 !important;
     background-color: #e8f0fe;
 }
-.icon:hover{
-    color: gray ;    
+
+.icon:hover {
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+@media print {
+    .toolkit {
+        display: none;
+    }
+
 }

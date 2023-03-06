@@ -39,9 +39,11 @@
     font-weight: 500;
     font-size: large;
 }
-.topbarMenu>span{
+
+.topbarMenu>span {
     font-size: small;
 }
+
 .docImage {
     width: 5vh;
     margin-left: 1.5rem;
@@ -73,4 +75,16 @@
     color: white !important;
     font-weight: 600 !important;
     background-color: #1a73e8;
+}
+
+
+
+
+
+
+@media print {
+    .topbar {
+        display: none;
+    }
+
 }

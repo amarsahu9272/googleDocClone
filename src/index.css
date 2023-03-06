@@ -2,3 +2,27 @@
     font-family: poppins;
     background-color: #fcfdfe ;
 }
+
+@page {
+    margin: 1in;
+}
+
+
+
+
+
+
+@media print{
+    body{
+        background: none;
+    }
+    .inputField{
+        width: 6.5;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        align-self: flex-start;
+    }
+    
+}

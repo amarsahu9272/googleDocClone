@@ -5,14 +5,6 @@ import Document from "../../component/documents/Document";
 import Toolkit from "../../component/toolkit/Toolkit";
 
 function Homepage() {
-  function handlePrint() {
-    try {
-      const inputField = document.getElementById("inputField");
-      inputField.contentWindow.document.execCommand("print", false, null);
-    } catch (e) {
-      window.print();
-    }
-  }
   return (
     <div className="homePage">
       <div className="homePageHeader">
@@ -20,7 +12,7 @@ function Homepage() {
         <Toolkit
           handleUndo={() => document.execCommand("undo", false, null)}
           handleRedo={() => document.execCommand("redo", false, null)}
-          handlePrint={handlePrint}
+          handlePrint={() => window.print()}
           handleSpellCheck={document.execCommand("command", null, false)}
           handlebold={() => document.execCommand("bold")}
           handleItalic={() => document.execCommand("italic")}
