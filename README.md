@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-vercel Link: [https://google-doc-clone-lemon.vercel.app/]
+Deployement(vercel Link): [https://google-doc-clone-jugf.vercel.app/]
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
