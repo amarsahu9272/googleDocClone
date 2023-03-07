@@ -1,28 +1,44 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Toolkit.css";
 import { toolkitIcons } from "../../constantData";
 import { useRecoilState } from "recoil";
 import { zoomLevelAtom } from "../../RecoilState";
 
-function Toolkit(props) {
+function Toolkit() {
   const fileInputRef = useRef(null);
-  // const [zoomLevel, setZoomLevel] = useState(100);
   const [zoomLevel, setZoomLevel] = useRecoilState(zoomLevelAtom);
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
   const [color, setColor] = useState("");
   const [color1, setColor1] = useState("");
   const [counter, setCounter] = useState(4);
-  props.handleColor(color);
-  props.handlebackgroundhighlight(color1);
+
+  useEffect(() => {
+    document.execCommand("foreColor", "", color);
+  }, [color]);
+  useEffect(() => {
+    document.execCommand("backColor", false, color1);
+  }, [color1]);
+
+  function formatDoc(cmd, value = null) {
+    if (value) {
+      document.execCommand(cmd, false, value);
+    } else {
+      document.execCommand(cmd);
+    }
+  }
+  function addLink() {
+    const url = prompt("Insert url");
+    formatDoc("createLink", url);
+  }
 
   function handleIncreaseFontSize() {
-    setCounter(counter+1)
+    setCounter(counter + 1);
     document.execCommand("fontSize", false, `${counter}`);
   }
 
   function handleDecreaseFontSize() {
-    setCounter(counter-1)
+    setCounter(counter - 1);
     document.execCommand("fontSize", false, `${counter}`);
   }
 
@@ -51,35 +67,28 @@ function Toolkit(props) {
         <toolkitIcons.UndoOutlinedIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleUndo}
+          onClick={() => document.execCommand("undo", false, null)}
         />
         <toolkitIcons.RedoOutlinedIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleRedo}
+          onClick={() => document.execCommand("redo", false, null)}
         />
         <toolkitIcons.PrintIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handlePrint}
+          onClick={() => window.print()}
         />
         <toolkitIcons.SpellcheckIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleSpellCheck}
+          onClick={document.execCommand("command", null, false)}
         />
         <toolkitIcons.FormatPaintIcon
           className="icon"
           style={{ fontSize: "18" }}
         />
       </span>
-      {/* <span className="icon toolkitContainer">
-        <h5 className="icon">100%</h5>
-        <toolkitIcons.ArrowDropDownIcon
-          className="icon"
-          style={{ fontSize: "18" }}
-        />
-      </span> */}
       <select
         value={zoomLevel}
         onChange={(e) => setZoomLevel(parseInt(e.target.value))}
@@ -130,22 +139,22 @@ function Toolkit(props) {
         <toolkitIcons.FormatBoldIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handlebold}
+          onClick={() => document.execCommand("bold")}
         />
         <toolkitIcons.FormatItalicIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleItalic}
+          onClick={() => document.execCommand("italic")}
         />
         <toolkitIcons.FormatUnderlinedIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleUnderline}
+          onClick={() => document.execCommand("underline")}
         />
         <toolkitIcons.StrikethroughSTwoToneIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleStrikeThrough}
+          onClick={() => document.execCommand("strikeThrough")}
         />
         <toolkitIcons.FormatColorTextIcon
           className="icon"
@@ -182,7 +191,7 @@ function Toolkit(props) {
         <toolkitIcons.InsertLinkIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.addLink}
+          onClick={addLink}
         />
         <toolkitIcons.AddCommentOutlinedIcon
           className="icon"
@@ -211,21 +220,22 @@ function Toolkit(props) {
         <toolkitIcons.FormatAlignLeftIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handlejustifyLeft}
+          onClick={() => document.execCommand("justifyLeft")}
         />
         <toolkitIcons.FormatAlignCenterIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handlejustifyCenter}
+          onClick={() => document.execCommand("justifyCenter")}
         />
         <toolkitIcons.FormatAlignRightIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handlejustifyRight}
+          onClick={() => document.execCommand("justifyRight")}
         />
         <toolkitIcons.FormatAlignJustifyIcon
           className="icon"
           style={{ fontSize: "18" }}
+          onClick={() => document.execCommand("justify")}
         />
       </span>
       <span className="toolkitContainer">
@@ -246,7 +256,7 @@ function Toolkit(props) {
         <toolkitIcons.FormatListBulletedIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleBulletList}
+          onClick={() => document.execCommand("insertUnorderedList")}
         />
         <toolkitIcons.ArrowDropDownIcon
           className="icon"
@@ -255,7 +265,7 @@ function Toolkit(props) {
         <toolkitIcons.FormatListNumberedIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleNumberedList}
+          onClick={() => document.execCommand("insertOrderedList")}
         />
         <toolkitIcons.ArrowDropDownIcon
           className="icon"
@@ -264,19 +274,19 @@ function Toolkit(props) {
         <toolkitIcons.FormatIndentDecreaseIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleDecreaseIndent}
+          onClick={() => document.execCommand("outdent")}
         />
         <toolkitIcons.FormatIndentIncreaseIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleIncreaseIndent}
+          onClick={() => document.execCommand("indent")}
         />
       </span>
       <span className="toolkitContainer">
         <toolkitIcons.FormatClearIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={props.handleClearFormate}
+          onClick={() => document.execCommand("delete", null, false)}
         />
       </span>
       <span
