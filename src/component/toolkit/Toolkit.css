@@ -25,6 +25,30 @@
     font-size: 10px;
 }
 
+
+.ZoomDropdown {
+    font-size: 0.9rem;
+    width: 4.5rem;
+    height: 2.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding-left: 0.2rem;
+}
+
+.ZoomDropdown:hover {
+    color: rgb(148, 148, 148);
+}
+
+.ZoomDropdown:focus {
+    outline: none;
+}
+
+.ZoomOption {
+    background-color: white;
+}
+
 .fontResizing {
     display: flex;
     align-items: center;
@@ -91,6 +115,7 @@
 .inputbox {
     width: 15px;
     height: 15px;
+    cursor: pointer;
 }
 
 .titlebarEditingBtn {
@@ -125,10 +150,10 @@
 }
 
 .UploadedImageStyling {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 

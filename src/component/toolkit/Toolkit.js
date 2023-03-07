@@ -1,12 +1,19 @@
 import React, { useRef, useState } from "react";
 import "./Toolkit.css";
 import { toolkitIcons } from "../../constantData";
+import { useRecoilState } from "recoil";
+import { zoomLevelAtom } from "../../RecoilState";
 
 function Toolkit(props) {
   const fileInputRef = useRef(null);
+  // const [zoomLevel, setZoomLevel] = useState(100);
+  const [zoomLevel, setZoomLevel] = useRecoilState(zoomLevelAtom);
+  const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
   const [color, setColor] = useState("");
+  const [color1, setColor1] = useState("");
   props.handleColor(color);
+  props.handlebackgroundhighlight(color1);
 
   const handleImageClick = () => {
     fileInputRef.current.click();
@@ -55,13 +62,38 @@ function Toolkit(props) {
           style={{ fontSize: "18" }}
         />
       </span>
-      <span className="icon toolkitContainer">
+      {/* <span className="icon toolkitContainer">
         <h5 className="icon">100%</h5>
         <toolkitIcons.ArrowDropDownIcon
           className="icon"
           style={{ fontSize: "18" }}
         />
-      </span>
+      </span> */}
+      <select
+        value={zoomLevel}
+        onChange={(e) => setZoomLevel(parseInt(e.target.value))}
+        className="ZoomDropdown"
+      >
+        <option className="ZoomOption" value={50}>
+          50%
+        </option>
+        <option className="ZoomOption" value={75}>
+          75%
+        </option>
+        <option className="ZoomOption" value={90}>
+          90%
+        </option>
+        <option className="ZoomOption" value={100}>
+          100%
+        </option>
+        <option className="ZoomOption" value={125}>
+          125%
+        </option>
+        <option className="ZoomOption" value={150}>
+          150%
+        </option>
+      </select>
+
       <span className="icon toolkitContainer">
         <h5 className="icon">Normal text</h5>
         <toolkitIcons.ArrowDropDownIcon
@@ -98,9 +130,9 @@ function Toolkit(props) {
         <toolkitIcons.FormatColorTextIcon
           className="icon"
           style={{ fontSize: "18" }}
-          onClick={() => setShow1(!show1)}
+          onClick={() => setShow(!show)}
         />
-        {show1 ? (
+        {show ? (
           <>
             {" "}
             <input
@@ -110,7 +142,21 @@ function Toolkit(props) {
             />
           </>
         ) : null}
-        <toolkitIcons.CreateIcon className="icon" style={{ fontSize: "18" }} />
+        <toolkitIcons.CreateIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={() => setShow1(!show1)}
+        />
+        {show1 ? (
+          <>
+            {" "}
+            <input
+              className="inputbox"
+              type="color"
+              onChange={(e) => setColor1(e.target.value)}
+            />
+          </>
+        ) : null}
       </span>
       <span className="toolkitContainer">
         <toolkitIcons.InsertLinkIcon

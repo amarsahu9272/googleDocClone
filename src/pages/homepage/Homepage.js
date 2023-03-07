@@ -18,8 +18,8 @@ function Homepage() {
           handleItalic={() => document.execCommand("italic")}
           handleUnderline={() => document.execCommand("underline")}
           handleColor={(color) => document.execCommand("foreColor", "", color)}
-          handlebackgroundhighlight={() =>
-            document.execCommand("backColor", "", "yellow")
+          handlebackgroundhighlight={(color) =>
+            document.execCommand("backColor", false, color)
           }
           handlejustifyLeft={() => document.execCommand("justifyLeft")}
           handlejustifyCenter={() => document.execCommand("justifyCenter")}
