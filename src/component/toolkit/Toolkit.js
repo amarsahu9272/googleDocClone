@@ -12,8 +12,19 @@ function Toolkit(props) {
   const [show1, setShow1] = useState(false);
   const [color, setColor] = useState("");
   const [color1, setColor1] = useState("");
+  const [counter, setCounter] = useState(4);
   props.handleColor(color);
   props.handlebackgroundhighlight(color1);
+
+  function handleIncreaseFontSize() {
+    setCounter(counter+1)
+    document.execCommand("fontSize", false, `${counter}`);
+  }
+
+  function handleDecreaseFontSize() {
+    setCounter(counter-1)
+    document.execCommand("fontSize", false, `${counter}`);
+  }
 
   const handleImageClick = () => {
     fileInputRef.current.click();
@@ -108,9 +119,13 @@ function Toolkit(props) {
           style={{ fontSize: "18", marginLeft: "2rem" }}
         />
         <span className="fontResizing">
-          <p className="icon fontMinus">-</p>
-          <p className="icon fontNumber">11</p>
-          <p className="icon fontPlus">+</p>
+          <button className="icon fontMinus" onClick={handleDecreaseFontSize}>
+            -
+          </button>
+          <p className="icon fontNumber">{counter}</p>
+          <button className="icon fontPlus" onClick={handleIncreaseFontSize}>
+            +
+          </button>
         </span>
         <toolkitIcons.FormatBoldIcon
           className="icon"

@@ -4,11 +4,11 @@ import Sidebar from "../../component/sidebar/Sidebar";
 import TextArea from "../../component/texteditor/TextArea";
 import Widgets from "../../component/widgets/Widgets";
 
-function Document() {
+function Document({onMouseEnter}) {
   return (
     <div className="document">
       <Sidebar />
-      <TextArea />
+      <TextArea  />
       <Widgets/>
     </div>
   );

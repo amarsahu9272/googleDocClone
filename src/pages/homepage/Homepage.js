@@ -26,6 +26,12 @@ function Homepage() {
           handleRedo={() => document.execCommand("redo", false, null)}
           handlePrint={() => window.print()}
           handleSpellCheck={document.execCommand("command", null, false)}
+          // handleIncreaseFontSize={() =>
+          //   document.execCommand("fontSize", false, "7")
+          // }
+          // handleDecreaseFontSize={() =>
+          //   document.execCommand("fontSize", false, "3")
+          // }
           handlebold={() => document.execCommand("bold")}
           handleItalic={() => document.execCommand("italic")}
           handleUnderline={() => document.execCommand("underline")}
