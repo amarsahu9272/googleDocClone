@@ -1,6 +1,7 @@
 import FormatBoldIcon from "@mui/icons-material/FormatBold";
 import FormatItalicIcon from "@mui/icons-material/FormatItalic";
 import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
+import StrikethroughSTwoToneIcon from "@mui/icons-material/StrikethroughSTwoTone";
 import GoogleIcon from "@mui/icons-material/Google";
 import FormatColorTextIcon from "@mui/icons-material/FormatColorText";
 
@@ -29,7 +30,8 @@ import RedoOutlinedIcon from "@mui/icons-material/RedoOutlined";
 import PrintIcon from "@mui/icons-material/Print";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
 import FormatPaintIcon from "@mui/icons-material/FormatPaint";
-import CreateIcon from "@mui/icons-material/Create";
+import BrushIcon from '@mui/icons-material/Brush';
+// import CreateIcon from "@mui/icons-material/Create";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 // import AddCommentIcon from "@mui/icons-material/AddComment";
 import AddCommentOutlinedIcon from "@mui/icons-material/AddCommentOutlined";
@@ -57,8 +59,10 @@ export const toolkitIcons = {
   FormatBoldIcon: FormatBoldIcon,
   FormatItalicIcon: FormatItalicIcon,
   FormatUnderlinedIcon: FormatUnderlinedIcon,
+  StrikethroughSTwoToneIcon:StrikethroughSTwoToneIcon,
   FormatColorTextIcon: FormatColorTextIcon,
-  CreateIcon: CreateIcon,
+  // CreateIcon: CreateIcon,
+  BrushIcon:BrushIcon,
 
   InsertLinkIcon: InsertLinkIcon,
   AddCommentOutlinedIcon: AddCommentOutlinedIcon,

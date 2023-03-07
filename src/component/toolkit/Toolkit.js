@@ -127,6 +127,11 @@ function Toolkit(props) {
           style={{ fontSize: "18" }}
           onClick={props.handleUnderline}
         />
+        <toolkitIcons.StrikethroughSTwoToneIcon
+          className="icon"
+          style={{ fontSize: "18" }}
+          onClick={props.handleStrikeThrough}
+        />
         <toolkitIcons.FormatColorTextIcon
           className="icon"
           style={{ fontSize: "18" }}
@@ -142,7 +147,7 @@ function Toolkit(props) {
             />
           </>
         ) : null}
-        <toolkitIcons.CreateIcon
+        <toolkitIcons.BrushIcon
           className="icon"
           style={{ fontSize: "18" }}
           onClick={() => setShow1(!show1)}
@@ -162,6 +167,7 @@ function Toolkit(props) {
         <toolkitIcons.InsertLinkIcon
           className="icon"
           style={{ fontSize: "18" }}
+          onClick={props.addLink}
         />
         <toolkitIcons.AddCommentOutlinedIcon
           className="icon"
