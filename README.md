@@ -8,7 +8,17 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.\![Screenshot (60)](https://user-images.githubusercontent.com/84452853/223330527-0fecf4bb-2788-4913-b421-f21ac96ded35.png)
+![Screenshot (61)](https://user-images.githubusercontent.com/84452853/223330533-fa03f8af-a176-4e87-b0d1-3b15ee3c9cbc.png)
+![Screenshot (62)](https://user-images.githubusercontent.com/84452853/223330538-1e074b7e-f04a-49ee-95d1-61a47ba73231.png)
+![Screenshot (63)](https://user-images.githubusercontent.com/84452853/223330540-f1ad45b3-744c-4a66-9507-e3ab13793359.png)
+![Screenshot (64)](https://user-images.githubusercontent.com/84452853/223330541-a1b10d41-03d5-4f7e-b15d-0404614d82d7.png)
+![Screenshot (65)](https://user-images.githubusercontent.com/84452853/223330542-e39b14ef-5da4-4275-b6fc-d5d19b906c9d.png)
+![Screenshot (66)](https://user-images.githubusercontent.com/84452853/223330546-9eaf1b35-041d-408a-888b-b0dd502d3251.png)
+![Screenshot (67)](https://user-images.githubusercontent.com/84452853/223330554-d1289359-b9cd-45a4-b9a4-b588cdd89043.png)
+![Screenshot (68)](https://user-images.githubusercontent.com/84452853/223330557-29632bf5-d852-46bd-b088-d89d647c7752.png)
+![Screenshot (69)](https://user-images.githubusercontent.com/84452853/223330561-e77c7417-8ddf-47ca-ad3a-3e21beb9b757.png)
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
