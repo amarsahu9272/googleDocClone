@@ -1,8 +1,4 @@
-# Getting Started with Create React App
-Deployement(vercel Link): [https://google-doc-clone-kohl.vercel.app/]
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+# Deployement(vercel Link):[https://google-doc-clone-kohl.vercel.app/]
 
 In the project directory, you can run:
 
